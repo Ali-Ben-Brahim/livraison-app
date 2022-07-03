@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CommandeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,8 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/test', function () {
-    return view('test');
-});
-Route::get('/test', [CommandeController::class, 'index'])->name('test.form');
-Route::post('/test', [CommandeController::class, 'submittest'])->name('test.submit');
+
+Route::get('/test', [CommandeController::class, 'index'])->name('CommandeController');
+Route::post('/test', [CommandeController::class, 'UserForm'])->name('validate.submit');

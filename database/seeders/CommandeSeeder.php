@@ -22,5 +22,6 @@ class CommandeSeeder extends Seeder
             "prix"=>100,
 
         ]);
+       
     }
 }

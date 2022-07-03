@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html >
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@ button{
     </head>
     <body >
         
-            <form action="{{ route('test.submit') }}" method="post" class="form">
+            <form action="{{ route('validate.submit') }}" method="post" class="form">
                 @csrf
                 <label for="Nom">Nom</label>
                 <input type="text" name="nom">

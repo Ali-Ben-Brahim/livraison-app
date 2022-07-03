@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+     $this->call([ CommandeSeeder ::class]);
        Commande::factory(5)->create();
     }
 }
